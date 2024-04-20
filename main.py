@@ -29,9 +29,9 @@ def two_id_calc(shape):
         print("Area = pi * radius * radius")
         print("Area = ", (math.pi * radius**2), "sq.units")
 
-    if area > 50:
+    if area > 10:
         for i in range(10):
-            for i in range(int(area/10)):
+            for j in range(int(area/10)):
                 print("#", end="")
             print()
     else:
