@@ -6,7 +6,7 @@ three_shapes = ["rectangular prism", "cone", "cylinder", "sphere"]
 
 def threeidcalc(shape):
     for x in three_shapes:
-        if three_shapes[x] == shape:
+        if x == shape:
             if shape == "rectangular prism":
                 length = input("Length: ")
                 width = input("Width: ")
