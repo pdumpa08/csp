@@ -4,7 +4,7 @@ two_or_three = input("Would you like to analyze a 2D or 3D shape? ")
 shape = input("Which shape would you like to analyze? ")
 three_shapes = ["rectangular prism", "cone", "cylinder", "sphere"]
 
-def threeidcalc(shape):
+def three_id_calc(shape):
     for x in three_shapes:
         if three_shapes[x] == shape:
             if shape == "rectangular prism":
