@@ -41,3 +41,11 @@ def three_id_calc(shape):
             elif shape == "sphere":
                 radius = input("Radius: ")
                 sphere(radius)
+             if area > 50:
+                for i in range(10):
+                    for i in range(int(area/10)):
+                        print("#", end="")
+                    print()
+                else:
+                for k in range(area):
+                    print("#", end="")
