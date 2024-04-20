@@ -15,6 +15,7 @@ def two_id_calc(shape):
         height = int(input("Height: "))
         print("\n")
         print("Area = (1/2) * base * height")
+        area = ((0.5) * base * height)
         print("Area = ", ((0.5) * base * height), "sq.units")
     elif shape == "trapezoid":
         top_base = int(input("Base One: "))
@@ -22,14 +23,17 @@ def two_id_calc(shape):
         height = int(input("Height: "))
         print("\n")
         print("Area = (1/2) * (base_one + base_two) * height")
+        area = ((0.5) * (top_base + bottom_base) * height)
         print("Area = ", ((0.5) * (top_base + bottom_base) * height), "sq.units")
     elif shape == "circle":
         radius = int(input("Radius: "))
         print("\n")
         print("Area = pi * radius * radius")
+        area = (math.pi * radius**2)
         print("Area = ", (math.pi * radius**2), "sq.units")
 
-    if area > 10:
+    print()
+    if area > 50:
         for i in range(10):
             for j in range(int(area/10)):
                 print("#", end="")
@@ -37,9 +41,31 @@ def two_id_calc(shape):
     else:
         for k in range(area):
             print("#", end="")
+    print("\n")
+
+def three_id_calc(shape):
+    for x in three_shapes:
+        if x == shape:
+            if shape == "rectangular prism":
+                length = input("Length: ")
+                width = input("Width: ")
+                height = input("Height: ")
+                prism(length, width, height)
+            elif shape == "cone":
+                radius = input("Radius: ")
+                height = input("Height: ")
+                cone(radius, height)
+            elif shape == "cylinder":
+                radius = input("Radius: ")
+                height = input("Height: ")
+                cylinder(radius, height)
+            elif shape == "sphere":
+                radius = input("Radius: ")
+                sphere(radius)
 
 
 def main():
+    print()
     shape = input("Which shape would you like to analyze? ")
     two_shapes = ["rectangle", "triangle", "trapezoid", "circle"]
     three_shapes = ["rectangular prism", "cone", "cylinder", "sphere"]
