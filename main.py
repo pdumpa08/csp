@@ -45,22 +45,34 @@ def two_id_calc(shape):
 
 def three_id_calc(shape):
             if shape == "rectangular prism":
-                length = input("Length: ")
-                width = input("Width: ")
-                height = input("Height: ")
-                prism(length, width, height)
+                length = int(input("Length: "))
+                width = int(input("Width: "))
+                height = int(input("Height: "))
+                print("\n")
+                print("Volume = length * width * height")
+                volume = (length * width * height)
+                print("Volume = ", volume , "cubic.units")
             elif shape == "cone":
-                radius = input("Radius: ")
-                height = input("Height: ")
-                cone(radius, height)
+                radius = int(input("Radius: "))
+                height = int(input("Height: "))
+                print("\n")
+                print("Volume = pi * radius * radius * height / 3")
+                volume = ((math.pi * radius**2 * height)/3)
+                print("Volume = ", volume, "cubic.units")
             elif shape == "cylinder":
-                radius = input("Radius: ")
-                height = input("Height: ")
-                cylinder(radius, height)
+                radius = int(input("Radius: "))
+                height = int(input("Height: "))
+                print("\n")
+                print("Volume = pi * radius * radius * height")
+                volume = (math.pi * radius**2 * height)
+                print("Volume = ", volume, "cubic.units")
             elif shape == "sphere":
-                radius = input("Radius: ")
-                sphere(radius)
-            if area > 50:
+                radius = int(input("Radius: "))
+                print("\n")
+                print("Volume = (4/3) * pi * radius * radius * radius")
+                volume = ((4/3) * math.pi * radius**3)
+                print("Volume = ", volume, "cubic.units")
+            if volume > 50:
             for i in range(10):
                 for j in range(int(area/10)):
                     print("#", end="")
