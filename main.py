@@ -44,8 +44,6 @@ def two_id_calc(shape):
     print("\n")
 
 def three_id_calc(shape):
-    for x in three_shapes:
-        if x == shape:
             if shape == "rectangular prism":
                 length = input("Length: ")
                 width = input("Width: ")
@@ -62,6 +60,15 @@ def three_id_calc(shape):
             elif shape == "sphere":
                 radius = input("Radius: ")
                 sphere(radius)
+            if area > 50:
+            for i in range(10):
+                for j in range(int(area/10)):
+                    print("#", end="")
+                print()
+            else:
+                for k in range(area):
+                    print("#", end="")
+            print("\n")
 
 
 def main():
