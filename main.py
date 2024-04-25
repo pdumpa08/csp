@@ -34,8 +34,8 @@ def two_id_calc(shape):
 
     print()
     if area > 50:
-        for i in range(10):
-            for j in range(int(area/10)):
+        for i in range(20):
+            for j in range(int(area/20)):
                 print("#", end="")
             print()
     else:
@@ -72,9 +72,11 @@ def three_id_calc(shape):
                 print("Volume = (4/3) * pi * radius * radius * radius")
                 volume = ((4/3) * math.pi * radius**3)
                 print("Volume = ", volume, "cubic.units")
+                
+            print()
             if volume > 50:
-                for i in range(10):
-                    for j in range(int(volume/10)):
+                for i in range(20):
+                    for j in range(int(volume/20)):
                         print("#", end="")
                     print()
             else:
