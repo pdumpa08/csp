@@ -34,8 +34,8 @@ def two_id_calc(shape):
 
     print()
     if area > 50:
-        for i in range(20):
-            for j in range(int(area/20)):
+        for i in range(10):
+            for j in range(int(area/10)):
                 print("#", end="")
             print()
     else:
