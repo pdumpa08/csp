@@ -1,9 +1,6 @@
 import math
 
-# Purpose: To calculate the area of 2D shapes
-# Input: The shape the user wants to calculate, and the length/width/base/height/top_base/bottom_base/radius
-# Output: The formula to calculate the area, the area, and a representation of the area with hashes
-# Acknowledge: Procedure done by partner
+
 def two_id_calc(shape):
     if shape == "rectangle":
         length = float(input("Length: "))
@@ -49,7 +46,7 @@ def two_id_calc(shape):
 # Purpose: To calculate the volume of 3D shapes
 # Input: The shape the user wants to calculate, and the length/width/height/radius
 # Output: The formula to calculate the volume, the volume, and a representation of the volume with hashes
-# Acknowledge: Procedure done by ME
+# Acknowledge: Procedure done by partner
 def three_id_calc(shape):
             if shape == "rectangular prism":
                 length = float(input("Length: "))
@@ -91,12 +88,7 @@ def three_id_calc(shape):
                         print("#", end="")
             print("\n")
 
-# Purpose: To determine which procedure to use based on the shape the user wants to analyze
-# Input: The shape the user wants to calculate
-# Output: The ouput of either procedure two_id_calc or procedure three_id_calc
-# Acknowledgements: 
-# Partner: two_shapes list; iteration, selection, and calling of two_id_calc
-# ME: three_shapes list; iteration, selection, and calling of three_id_calc
+
 def main():
     print()
     shape = input("Which shape would you like to analyze? ")
